@@ -1,0 +1,5 @@
+INDEX VERSION 1.134+C:\Users\papro\ad\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+2852168233.index
+1852971455.index
+3207999943.index
