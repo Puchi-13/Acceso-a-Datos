@@ -4,4 +4,11 @@
   <artifactId>T1-MONGODB</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>T1-MONGODB</name>
+   <dependencies>
+    <dependency>
+      <groupId>org.mongodb</groupId>
+      <artifactId>mongodb-driver-sync</artifactId>
+      <version>4.11.0</version>
+    </dependency>
+  </dependencies>
 </project>

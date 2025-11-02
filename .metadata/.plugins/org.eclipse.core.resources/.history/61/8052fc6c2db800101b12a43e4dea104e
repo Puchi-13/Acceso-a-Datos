@@ -1,0 +1,21 @@
+import java.util.List;
+
+public class Plato {
+    private String nombre;
+    private String tipo;
+    private List<Ingrediente> ingredientes;
+
+    public static class Ingrediente {
+        private String nombre;
+        private String cantidad;
+    }
+
+    @Override
+    public String toString() {
+        return "Plato{" +
+                "nombre='" + nombre + '\'' +
+                ", tipo='" + tipo + '\'' +
+                ", ingredientes=" + ingredientes +
+                '}';
+    }
+}

@@ -1,0 +1,113 @@
+import org.bson.Document;
+import org.bson.conversions.Bson;
+import com.mongodb.client.MongoClients;
+import com.mongodb.client.MongoClient;
+import com.mongodb.client.MongoDatabase;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoCursor;
+import com.mongodb.client.model.Filters;
+import com.mongodb.client.model.Projections;
+import com.mongodb.client.model.Sorts;
+import com.mongodb.client.model.Updates;
+
+public class Concesionario {
+
+	public static void main(String[] args) {
+		
+		MongoClient cliente = MongoClients.create();
+		MongoDatabase db = cliente.getDatabase("Concesionario");
+		MongoCollection<Document> coleccionPersonas = db.getCollection("Personas");
+		MongoCollection<Document> coleccionCoches = db.getCollection("Coches");
+		MongoCursor<Document> cursor;
+
+		// EJ1
+		cursor = coleccionCoches.find(Filters.eq("Model", "Rolls")).iterator();
+		while (cursor.hasNext()) {
+			System.out.println(cursor.next().toJson());
+		}
+
+		// EJ2
+		cursor = coleccionCoches.find(Filters.eq("Model", "Ford")).iterator();
+		while (cursor.hasNext()) {
+			System.out.println(cursor.next().toString());
+		}
+
+		// EJ3
+		Bson filtroEj3 = Filters.and(Filters.eq("Model", "Ford"), Filters.gt("Year", 1995), Filters.lt("Year", 2000));
+		cursor = coleccionCoches.find(filtroEj3).sort(Sorts.ascending("Value")).iterator();
+		if (!cursor.hasNext()) {
+			System.out.println("No hay Ford entre 1995 y 2000.");
+		} else {
+			while (cursor.hasNext()) {
+				System.out.println(cursor.next().toJson());
+			}
+		}
+
+		// EJ4
+		Bson filtroEj4 = Filters.or(Filters.eq("Model", "Ford"), Filters.eq("Model", "Rolls"));
+		Document cocheEj4 = coleccionCoches.find(filtroEj4).first();
+		if (cocheEj4 != null) {
+			String matriculaEj4 = cocheEj4.getString("Matrícula");
+			System.out.println("Mátricula: " + matriculaEj4);
+		}
+
+		// EJ5
+		Bson filtroEj5 = Filters.lt("Year", 1994);
+		Bson proyeccionEj5 = Projections.include("Model", "Matrícula", "Value");
+		cursor = coleccionCoches.find(filtroEj5).projection(proyeccionEj5).sort(Sorts.ascending("Year")).iterator();
+		while (cursor.hasNext()) {
+			System.out.println(cursor.next().toJson());
+		}
+
+		// EJ6
+		cursor = coleccionPersonas.find(Filters.size("coches", 2)).iterator();
+		while (cursor.hasNext()) {
+			System.out.println(cursor.next().toJson());
+		}
+
+		// EJ7
+		cursor = coleccionCoches.find(Filters.regex("Model", "r", "i")).sort(Sorts.ascending("Model")).iterator();
+		while (cursor.hasNext()) {
+			System.out.println(cursor.next().toJson());
+		}
+
+		// EJ8
+		Document cocheEj8 = coleccionCoches.find(Filters.eq("id_car", 107)).first();
+		if (cocheEj8 != null) {
+			Document personaEj8 = coleccionPersonas.find(Filters.in("coches", 107)).first();
+			if (personaEj8 != null) {
+				System.out.println("Propietario del coche 107:");
+				System.out.println("Nombre: " + personaEj8.getString("surname"));
+				System.out.println("Ciudad: " + personaEj8.getString("City"));
+			}
+		}
+
+		// EJ9
+		cursor = coleccionPersonas.find(Filters.size("coches", 2)).projection(Projections.include("surname"))
+				.iterator();
+		while (cursor.hasNext()) {
+			System.out.println("Nombre: " + cursor.next().getString("surname"));
+		}
+
+		// EJ10
+		coleccionCoches.updateOne(Filters.eq("id_car", 101), Updates.set("Value", 3500));
+		cursor = coleccionCoches.find(Filters.and(Filters.eq("id_car", 101), Filters.eq("Value", 3500))).iterator();
+		while (cursor.hasNext()) {
+			System.out.println("Ha sido cambiado con exito: " + cursor.next().toJson());
+		}
+
+		// EJ11
+		Document nuevoCoche = new Document("Model", "Mercedes").append("Year", 2001).append("id_car", 200)
+				.append("Value", 3500);
+		coleccionCoches.insertOne(nuevoCoche);
+		System.out.println("Coche añadido con éxito!");
+
+		// EJ12
+		coleccionPersonas.updateOne(Filters.eq("id_persona", 4), Updates.push("coches", 200));
+		cursor = coleccionPersonas.find(Filters.eq("id_persona", 4)).iterator();
+		while (cursor.hasNext()) {
+			System.out.println("La persona 4 ha sido actualizada: " + cursor.next().toJson());
+		}
+	}
+
+}

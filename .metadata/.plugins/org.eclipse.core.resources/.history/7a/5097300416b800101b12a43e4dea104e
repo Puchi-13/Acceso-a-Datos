@@ -1,0 +1,246 @@
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.bson.Document;
+
+import com.mongodb.client.FindIterable;
+import com.mongodb.client.MongoClient;
+import com.mongodb.client.MongoClients;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoCursor;
+import com.mongodb.client.MongoDatabase;
+
+import static com.mongodb.client.model.Filters.*;
+import static com.mongodb.client.model.Projections.*;
+import static com.mongodb.client.model.Sorts.*;
+import static com.mongodb.client.model.Updates.*;
+
+public class Concesionario {
+
+    public static void main(String[] args) {
+        MongoClient mongoCliente = null;
+
+        try {
+            mongoCliente = MongoClients.create();
+            MongoDatabase bd = mongoCliente.getDatabase("Concesionario");
+            MongoCollection<Document> colCoche = bd.getCollection("coche");
+            MongoCollection<Document> colPersonas = bd.getCollection("personas");
+
+            MongoCursor<Document> cursor;
+
+
+
+
+            // 1. Buscar los coche de modelo Rolls, obtener el json con la información del coche.
+            System.out.println("\nEJER 1:");
+            cursor = colCoche.find(eq("Model", "Rolls")).iterator();
+            while (cursor.hasNext()) {
+                System.out.println(cursor.next().toJson());
+            }
+
+
+
+            // 2. Buscar los coches modelo Ford, obtener de la colección coche el surname de la persona propietaria.
+            System.out.println("\nEJER 2:");
+            cursor = colCoche.find(eq("Model", "Ford")).iterator();
+            while (cursor.hasNext()) {
+                Document coche = cursor.next();
+                Object idCar = coche.get("id_car");
+
+                // buscar persona cuyo array 'coches' contenga el id (como número)
+                Document propietario = null;
+                if (idCar != null) {
+                    propietario = colPersonas.find(eq("coches", idCar)).first();
+                    // si no, tal vez en personas el id está como string
+                    if (propietario == null) propietario = colPersonas.find(eq("coches", String.valueOf(idCar))).first();
+                }
+
+                String surname = propietario != null ? propietario.getString("surname") : "NO_ENCONTRADO";
+                System.out.println("id_car=" + coche.get("id_car") + " -> surname: " + surname);
+            }
+
+
+
+            // 3. Busca de los coches Ford del Year anterior al 2000 y posterior al 1995, su Value y ordenarlos por este campo.
+            System.out.println("\nEJER 3:");
+            List<Document> list3 = new ArrayList<>();
+            cursor = colCoche.find(and(eq("Model", "Ford"), gt("Year", 1995), lt("Year", 2000))).iterator();
+            while (cursor.hasNext()) {
+                Document c = cursor.next();
+                // Value puede venir con distinto nombre (Value o Vallue)
+                Object val = c.get("Value");
+                if (val == null) val = c.get("Vallue");
+                Document out = new Document("id_car", c.get("id_car"))
+                        .append("Year", c.get("Year"))
+                        .append("Value", val);
+                list3.add(out);
+            }
+            list3.sort(Comparator.comparingInt(d -> {
+                Object v = d.get("Value");
+                if (v instanceof Number) return ((Number) v).intValue();
+                try { return Integer.parseInt(String.valueOf(v)); } catch (Exception e) { return 0; }
+            }));
+            for (Document r : list3) System.out.println(r.toJson());
+
+
+
+            // 4. Buscar el coche Ford o Rolls y de la persona Juan, obtener la matrícula de los coches.
+            System.out.println("\nEJER 4:");
+            // obtener las personas llamadas Juan
+            List<Document> juanes = new ArrayList<>();
+            MongoCursor<Document> curJuan = colPersonas.find(eq("surname", "Juan")).iterator();
+            while (curJuan.hasNext()) juanes.add(curJuan.next());
+
+            cursor = colCoche.find(in("Model", Arrays.asList("Ford", "Rolls"))).iterator();
+            while (cursor.hasNext()) {
+                Document coche = cursor.next();
+                Object idCar = coche.get("id_car");
+                boolean ownedByJuan = false;
+                for (Document p : juanes) {
+                    Object cochesArr = p.get("coches");
+                    if (cochesArr != null && idCar != null) {
+                        // si 'coches' es array de números o strings, simple contains check vía búsqueda en BD
+                        Document found = colPersonas.find(and(eq("surname", "Juan"), eq("coches", idCar))).first();
+                        if (found != null) { ownedByJuan = true; break; }
+                        found = colPersonas.find(and(eq("surname", "Juan"), eq("coches", String.valueOf(idCar)))).first();
+                        if (found != null) { ownedByJuan = true; break; }
+                    }
+                }
+                if (ownedByJuan) {
+                    Object matricula = coche.get("Matrícula");
+                    if (matricula == null) matricula = coche.get("Mstrícula");
+                    if (matricula == null) matricula = coche.get("Matricula");
+                    if (matricula == null) matricula = coche.get("plate");
+                    System.out.println("id_car=" + idCar + " -> matricula: " + matricula);
+                }
+            }
+
+
+
+            // 5. Coches, obtener una proyección con la Model, Matrícula y Value, cuyos dueños (colección persona) son de la ciudad de «London» y del año menor 1994, ordenados por año.
+            System.out.println("\nEJER 5:");
+            List<Document> resultados5 = new ArrayList<>();
+            cursor = colCoche.find(lt("Year", 1994)).iterator();
+            while (cursor.hasNext()) {
+                Document coche = cursor.next();
+                Object idCar = coche.get("id_car");
+                Document propietario = null;
+                if (idCar != null) {
+                    propietario = colPersonas.find(eq("coches", idCar)).first();
+                    if (propietario == null) propietario = colPersonas.find(eq("coches", String.valueOf(idCar))).first();
+                }
+                if (propietario != null) {
+                    String city = propietario.getString("City");
+                    if ("London".equalsIgnoreCase(city)) {
+                        Object val = coche.get("Value");
+                        if (val == null) val = coche.get("Vallue");
+                        Object mat = coche.get("Matrícula");
+                        if (mat == null) mat = coche.get("Mstrícula");
+                        Document out = new Document("Model", coche.get("Model"))
+                                .append("Matrícula", mat)
+                                .append("Value", val)
+                                .append("Year", coche.get("Year"));
+                        resultados5.add(out);
+                    }
+                }
+            }
+            resultados5.sort(Comparator.comparingInt(d -> d.getInteger("Year", 0)));
+            for (Document r : resultados5) System.out.println(r.toJson());
+
+
+
+            // 6. Obtener la ciudad de las personas que tienen dos coches
+            System.out.println("\nEJER 6:");
+            MongoCursor<Document> cursorPersonasCon2 = colPersonas.find(size("coches", 2)).projection(fields(include("City", "surname"), excludeId())).iterator();
+            while (cursorPersonasCon2.hasNext()) {
+                Document p = cursorPersonasCon2.next();
+                System.out.println("surname: " + p.getString("surname") + " -> City: " + p.getString("City"));
+            }
+
+
+
+            // 7. Buscar el coche, obtener json con toda la información, que contiene el modelo una «r» (investiga con que función puedes buscar en una cadena), ordenados por marca.
+            System.out.println("\nEJER 7:");
+            FindIterable<Document> containsR = colCoche.find(regex("Model", "r", "i")).sort(ascending("Model"));
+            for (Document d : containsR) System.out.println(d.toJson());
+
+
+
+            // 8. Buscar la persona «surname» propietaria, nombre y ciudad del coche 107.
+            System.out.println("\nEJER 8:");
+            Document coche107 = colCoche.find(eq("id_car", 107)).first();
+            if (coche107 != null) {
+                Document propietario = null;
+                // buscar por array coches conteniendo 107 (num o string)
+                propietario = colPersonas.find(eq("coches", 107)).first();
+                if (propietario == null) propietario = colPersonas.find(eq("coches", String.valueOf(107))).first();
+
+                if (propietario != null) {
+                    System.out.println("surname: " + propietario.getString("surname") + ", City: " + propietario.getString("City"));
+                } else {
+                    System.out.println("No encontrado propietario para id_car=107");
+                }
+            } else {
+                System.out.println("No existe coche con id_car=107");
+            }
+
+
+
+            // 9. Buscar personas con 2 coches, muestra una proyección con el surname.
+            System.out.println("\nEJER 9:");
+            MongoCursor<Document> cur9 = colPersonas.find(size("coches", 2)).projection(fields(include("surname"), excludeId())).iterator();
+            while (cur9.hasNext()) {
+                Document p = cur9.next();
+                System.out.println("surname: " + p.getString("surname"));
+            }
+
+
+
+            // 10. Modificar el modelo del coche_id 101 valor 2000.
+            System.out.println("\nEJER 10:");
+            colCoche.updateOne(eq("id_car", 101), combine(set("Model", "2000"), set("Year", 2000)));
+            Document actualizado101 = colCoche.find(eq("id_car", 101)).first();
+            System.out.println("Resultado: " + (actualizado101 != null ? actualizado101.toJson() : "No encontrado"));
+
+
+
+            // 11. Añadir un coche Modelo Mercedes año:2001 id_coche:200 valor:3500.
+            System.out.println("\nEJER 11:");
+            Document nuevo = new Document("id_car", 200)
+                    .append("Model", "Mercedes")
+                    .append("Year", 2001)
+                    .append("Value", 3500)
+                    .append("Matrícula", "M-200");
+            try {
+                colCoche.insertOne(nuevo);
+                System.out.println("Insertado: " + nuevo.toJson());
+            } catch (Exception e) {
+                colCoche.replaceOne(eq("id_car", 200), nuevo, new com.mongodb.client.model.ReplaceOptions().upsert(true));
+                System.out.println("Upsert realizado para id_car=200");
+            }
+
+
+
+            // 12. Modificar la persona con id_persona:4 y añade a su array de coches el nuevo coche con id_coche:200
+            System.out.println("\nEJER 12:");
+            long matched = colPersonas.updateOne(eq("id_persona", 4), push("coches", 200)).getMatchedCount();
+            if (matched == 0) {
+                Document personaNueva = new Document("id_persona", 4).append("coches", Arrays.asList(200));
+                colPersonas.insertOne(personaNueva);
+                System.out.println("Persona id_persona=4 no existía: creada con el coche 200");
+            } else {
+                System.out.println("Persona id_persona=4 actualizada: añadido coche 200");
+            }
+
+
+
+            System.out.println("\n== FIN DE TODOS LOS EJERCICIOS ==");
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            if (mongoCliente != null) mongoCliente.close();
+        }
+    }
+}

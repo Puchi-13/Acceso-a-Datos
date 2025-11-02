@@ -1,0 +1,53 @@
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+import com.mongodb.client.MongoClients;
+import com.mongodb.client.MongoClient;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoDatabase;
+import org.bson.Document;
+
+import java.io.FileReader;
+import java.io.Reader;
+import java.lang.reflect.Type;
+import java.util.List;
+
+public class Practica_Ampliacion_2 {
+	
+	public static void main(String[] args) {
+		try {
+			Gson gson = new Gson();
+			Reader reader = new FileReader("Cocina.json"); // ruta a tu JSON
+			Type tipoLista = new TypeToken<List<Plato>>() {
+			}.getType();
+			List<Plato> listaPlatos = gson.fromJson(reader, tipoLista);
+
+			// 2. Conectar a MongoDB y obtener la BD Cocina
+			MongoClient mongoClient = MongoClients.create("mongodb://localhost:27017");
+			MongoDatabase dbCocina = mongoClient.getDatabase("Cocina");
+			MongoCollection<Document> coleccionPlatos = dbCocina.getCollection("platos");
+
+			// 3. Insertar cada plato como documento
+			for (Plato plato : listaPlatos) {
+				Document doc = new Document().append("nombre", plato.getNombre()).append("tipo", plato.getTipo())
+						.append("ingredientes", plato.getIngredientes().stream().map(
+								ing -> new Document("nombre", ing.getNombre()).append("cantidad", ing.getCantidad()))
+								.toList());
+
+				coleccionPlatos.insertOne(doc);
+			}
+
+			// 4. Mostrar por consola los platos insertados
+			System.out.println("Platos insertados en MongoDB:");
+			for (Plato plato : listaPlatos) {
+				System.out.println(plato);
+			}
+
+			reader.close();
+			mongoClient.close();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+}

@@ -1,0 +1,33 @@
+import com.mongodb.client.*;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+import org.bson.Document;
+
+import java.io.FileReader;
+import java.util.List;
+
+public class Practica_Ampliacion_2 {
+
+    public static void main(String[] args) throws Exception {
+
+        // Leer JSON
+        Gson gson = new Gson();
+        FileReader reader = new FileReader("platos.json");
+        List<Plato> listaPlatos = gson.fromJson(reader, new TypeToken<List<Plato>>(){}.getType());
+
+        // Conexión MongoDB
+        MongoClient cliente = MongoClients.create();
+        MongoDatabase db = cliente.getDatabase("Cocina");
+        MongoCollection<Document> coleccionPlatos = db.getCollection("platos");
+
+        // Insertar cada plato
+        for(Plato p : listaPlatos) {
+            Document doc = Document.parse(gson.toJson(p));
+            coleccionPlatos.insertOne(doc);
+        }
+
+        System.out.println("Platos insertados correctamente.");
+
+        cliente.close();
+    }
+}
