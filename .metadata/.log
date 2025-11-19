@@ -1218,3 +1218,617 @@ java.lang.IllegalStateException: Unexpected null value present!
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-02 22:10:26.615
 !MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+!SESSION 2025-11-02 22:18:25.712 -----------------------------------------------
+eclipse.buildId=4.36.0.20250605-1300
+java.version=21.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2025-11-02 22:18:28.119
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-11-02 22:18:34.483
+!MESSAGE Logback config file: C:\Users\papro\ad\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.100.20250418-1315.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-11-02 22:18:39.309
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\papro'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.codetogether.hq.eclipse 1 0 2025-11-02 22:18:40.457
+!MESSAGE Authorization Server started successfuly
+!SESSION 2025-11-19 19:08:00.675 -----------------------------------------------
+eclipse.buildId=4.36.0.20250605-1300
+java.version=21.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2025-11-19 19:08:03.223
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-11-19 19:08:08.151
+!MESSAGE Logback config file: C:\Users\papro\ad\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.100.20250418-1315.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-11-19 19:08:14.457
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\papro'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.codetogether.hq.eclipse 1 0 2025-11-19 19:08:16.085
+!MESSAGE Authorization Server started successfuly
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:22:31.939
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:22:31.948
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:22:32.437
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:22:32.439
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:22:32.477
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:22:32.481
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:23:43.284
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:23:43.289
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:23:53.883
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:23:53.886
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:28:08.393
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:28:08.396
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:30:14.949
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:30:14.953
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:30:19.872
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:30:19.875
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:30:37.272
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:30:37.275
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:30:44.164
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:30:44.167
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:30:58.046
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:30:58.048
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:31:01.676
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:31:01.678
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:34:01.817
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:34:01.820
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:34:05.575
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:34:05.578
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:34:37.055
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:34:37.058
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:34:49.410
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:34:49.413
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:34:56.063
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:34:56.065
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-11-19 19:35:14.841
+!MESSAGE Unexpected null value present!
+!STACK 0
+java.lang.IllegalStateException: Unexpected null value present!
+	at org.eclipse.lsp4e.internal.NullSafetyHelper.castNonNull(NullSafetyHelper.java:36)
+	at org.eclipse.lsp4e.operations.semanticTokens.SemanticTokensClient.requestFullSemanticTokens(SemanticTokensClient.java:45)
+	at org.eclipse.lsp4e.operations.semanticTokens.SemanticHighlightReconcilerStrategy.fullReconcile(SemanticHighlightReconcilerStrategy.java:239)
+	at org.eclipse.lsp4e.operations.semanticTokens.SemanticHighlightReconcilerStrategy.initialReconcile(SemanticHighlightReconcilerStrategy.java:258)
+	at org.eclipse.ui.internal.genericeditor.CompositeReconcilerStrategy.initialReconcile(CompositeReconcilerStrategy.java:48)
+	at org.eclipse.jface.text.reconciler.Reconciler.initialProcess(Reconciler.java:223)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:177)
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-11-19 19:35:33.033
+!MESSAGE Could not detect hyperlinks due to timeout after 800 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.declaration.OpenDeclarationHyperlinkDetector.detectHyperlinks(OpenDeclarationHyperlinkDetector.java:72)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:250)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4338)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1214)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4136)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3724)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:678)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:583)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:185)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:219)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:627)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1431)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:35:33.109
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:35:33.111
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:35:34.298
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:35:34.301
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:35:52.896
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:35:52.901
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-11-19 19:40:27.747
+!MESSAGE Unexpected null value present!
+!STACK 0
+java.lang.IllegalStateException: Unexpected null value present!
+	at org.eclipse.lsp4e.internal.NullSafetyHelper.castNonNull(NullSafetyHelper.java:36)
+	at org.eclipse.lsp4e.operations.semanticTokens.SemanticTokensClient.requestFullSemanticTokens(SemanticTokensClient.java:45)
+	at org.eclipse.lsp4e.operations.semanticTokens.SemanticHighlightReconcilerStrategy.fullReconcile(SemanticHighlightReconcilerStrategy.java:239)
+	at org.eclipse.lsp4e.operations.semanticTokens.SemanticHighlightReconcilerStrategy.initialReconcile(SemanticHighlightReconcilerStrategy.java:258)
+	at org.eclipse.ui.internal.genericeditor.CompositeReconcilerStrategy.initialReconcile(CompositeReconcilerStrategy.java:48)
+	at org.eclipse.jface.text.reconciler.Reconciler.initialProcess(Reconciler.java:223)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:177)
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-11-19 19:40:39.510
+!MESSAGE Could not detect hyperlinks due to timeout after 800 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.declaration.OpenDeclarationHyperlinkDetector.detectHyperlinks(OpenDeclarationHyperlinkDetector.java:72)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:250)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4338)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1214)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4136)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3724)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:678)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:583)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:185)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:219)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:627)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1431)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:40:40.424
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:40:40.427
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:40:41.626
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:40:41.628
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:40:52.160
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:40:52.163
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-11-19 19:40:56.840
+!MESSAGE Unexpected null value present!
+!STACK 0
+java.lang.IllegalStateException: Unexpected null value present!
+	at org.eclipse.lsp4e.internal.NullSafetyHelper.castNonNull(NullSafetyHelper.java:36)
+	at org.eclipse.lsp4e.operations.semanticTokens.SemanticTokensClient.requestFullSemanticTokens(SemanticTokensClient.java:45)
+	at org.eclipse.lsp4e.operations.semanticTokens.SemanticHighlightReconcilerStrategy.fullReconcile(SemanticHighlightReconcilerStrategy.java:239)
+	at org.eclipse.lsp4e.operations.semanticTokens.SemanticHighlightReconcilerStrategy.initialReconcile(SemanticHighlightReconcilerStrategy.java:258)
+	at org.eclipse.ui.internal.genericeditor.CompositeReconcilerStrategy.initialReconcile(CompositeReconcilerStrategy.java:48)
+	at org.eclipse.jface.text.reconciler.Reconciler.initialProcess(Reconciler.java:223)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:177)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:42:17.163
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:42:17.165
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:42:29.880
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:42:29.883
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:42:41.175
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:42:41.177
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-11-19 19:42:58.882
+!MESSAGE Unexpected null value present!
+!STACK 0
+java.lang.IllegalStateException: Unexpected null value present!
+	at org.eclipse.lsp4e.internal.NullSafetyHelper.castNonNull(NullSafetyHelper.java:36)
+	at org.eclipse.lsp4e.operations.semanticTokens.SemanticTokensClient.requestFullSemanticTokens(SemanticTokensClient.java:45)
+	at org.eclipse.lsp4e.operations.semanticTokens.SemanticHighlightReconcilerStrategy.fullReconcile(SemanticHighlightReconcilerStrategy.java:239)
+	at org.eclipse.lsp4e.operations.semanticTokens.SemanticHighlightReconcilerStrategy.initialReconcile(SemanticHighlightReconcilerStrategy.java:258)
+	at org.eclipse.ui.internal.genericeditor.CompositeReconcilerStrategy.initialReconcile(CompositeReconcilerStrategy.java:48)
+	at org.eclipse.jface.text.reconciler.Reconciler.initialProcess(Reconciler.java:223)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:177)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-11-19 19:43:31.336
+!MESSAGE Launch configuration MostrarNombreApellidosProfesorPorDepartamento_Practica1_5 references non-existing project T2-JDBC.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Launch configuration MostrarNombreApellidosProfesorPorDepartamento_Practica1_5 references non-existing project T2-JDBC.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1871)
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1748)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:66)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:52)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:220)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:204)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:527)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:415)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:409)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:435)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:137)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:892)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:1042)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$0(ProjectRegistryRefreshJob.java:162)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.launching 4 107 2025-11-19 19:43:31.337
+!MESSAGE Launch configuration MostrarNombreApellidosProfesorPorDepartamento_Practica1_5 references non-existing project T2-JDBC.
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-11-19 19:43:31.338
+!MESSAGE Launch configuration MostrarNombreApellidosProfesorPorDepartamento_Practica1_5 references non-existing project T2-JDBC.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Launch configuration MostrarNombreApellidosProfesorPorDepartamento_Practica1_5 references non-existing project T2-JDBC.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1871)
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1748)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:66)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:52)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:220)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:204)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:527)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:415)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:410)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:435)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:137)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:892)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:1042)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$0(ProjectRegistryRefreshJob.java:162)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.launching 4 107 2025-11-19 19:43:31.338
+!MESSAGE Launch configuration MostrarNombreApellidosProfesorPorDepartamento_Practica1_5 references non-existing project T2-JDBC.
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-11-19 19:43:31.341
+!MESSAGE Launch configuration MostrarNombreApellidosProfesorPorDepartamento_Practica1_5 references non-existing project T2-JDBC.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Launch configuration MostrarNombreApellidosProfesorPorDepartamento_Practica1_5 references non-existing project T2-JDBC.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1871)
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1748)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:66)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:52)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:220)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:204)
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationChanged(LaunchManager.java:2009)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.writeNewFile(LaunchConfigurationWorkingCopy.java:380)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave0(LaunchConfigurationWorkingCopy.java:259)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:229)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:187)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:411)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:435)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:137)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:892)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:1042)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$0(ProjectRegistryRefreshJob.java:162)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.launching 4 107 2025-11-19 19:43:31.341
+!MESSAGE Launch configuration MostrarNombreApellidosProfesorPorDepartamento_Practica1_5 references non-existing project T2-JDBC.
+
+!ENTRY org.eclipse.ui.ide 4 4 2025-11-19 19:44:26.339
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:191)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:124)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:567)
+	at org.eclipse.jface.resource.URLImageDescriptor._createImage(URLImageDescriptor.java:299)
+	at org.eclipse.jface.resource.URLImageDescriptor.createImage(URLImageDescriptor.java:256)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:331)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:309)
+	at com.genuitec.eclipse.startup.dialogs.tabs.RecentTabFactory.createTabArea(RecentTabFactory.java:92)
+	at com.genuitec.eclipse.startup.dialogs.tabs.CodeFullyTabFactory.createContents(CodeFullyTabFactory.java:139)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.createTabContent(SideTabFolder.java:455)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.doCreateTabs(SideTabFolder.java:224)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.createTabs(SideTabFolder.java:155)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.createTabs(AbstactSideTabDialog.java:142)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.createTabs(CustomStartupDialog.java:464)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.createTabs(CustomStartupDialog.java:460)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.createContents(AbstactSideTabDialog.java:122)
+	at org.eclipse.jface.window.Window.create(Window.java:431)
+	at org.eclipse.jface.window.Window.open(Window.java:788)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.open(AbstactSideTabDialog.java:61)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.prompt(CustomStartupDialog.java:335)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.showCustomDialog(IDEApplication.java:627)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.promptForWorkspace(IDEApplication.java:383)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.checkInstanceLocation(IDEApplication.java:328)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:175)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:219)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:627)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1431)
+
+!ENTRY org.eclipse.ui.ide 4 4 2025-11-19 19:44:26.340
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:191)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:124)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:607)
+	at com.genuitec.eclipse.webicons.IconImageDescriptor.createImage(IconImageDescriptor.java:46)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:331)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:309)
+	at com.genuitec.eclipse.startup.dialogs.custom.UIHelper.createIcon(UIHelper.java:342)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameControl.createBrowseOnHover(WorkspaceNameControl.java:279)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameLink.createNameLabel(WorkspaceNameLink.java:104)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameControl.<init>(WorkspaceNameControl.java:183)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameLink.<init>(WorkspaceNameLink.java:79)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceControl.createWorkspaceNameControl(WorkspaceControl.java:117)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceControl.createControl(WorkspaceControl.java:43)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspacesTabFactory.createTabArea(WorkspacesTabFactory.java:85)
+	at com.genuitec.eclipse.startup.dialogs.tabs.CodeFullyTabFactory.createContents(CodeFullyTabFactory.java:139)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.createTabContent(SideTabFolder.java:455)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.doCreateTabs(SideTabFolder.java:224)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.createTabs(SideTabFolder.java:155)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.createTabs(AbstactSideTabDialog.java:142)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.createTabs(CustomStartupDialog.java:464)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.createTabs(CustomStartupDialog.java:460)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.createContents(AbstactSideTabDialog.java:122)
+	at org.eclipse.jface.window.Window.create(Window.java:431)
+	at org.eclipse.jface.window.Window.open(Window.java:788)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.open(AbstactSideTabDialog.java:61)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.prompt(CustomStartupDialog.java:335)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.showCustomDialog(IDEApplication.java:627)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.promptForWorkspace(IDEApplication.java:383)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.checkInstanceLocation(IDEApplication.java:328)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:175)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:219)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:627)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1431)
+
+!ENTRY org.eclipse.ui.ide 4 4 2025-11-19 19:44:26.341
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:191)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:124)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:607)
+	at com.genuitec.eclipse.webicons.IconImageDescriptor.createImage(IconImageDescriptor.java:46)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:331)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:309)
+	at com.genuitec.eclipse.startup.dialogs.custom.UIHelper.createIcon(UIHelper.java:342)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameControl.createBrowseOnHover(WorkspaceNameControl.java:279)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameLink.createNameLabel(WorkspaceNameLink.java:104)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameControl.<init>(WorkspaceNameControl.java:183)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameLink.<init>(WorkspaceNameLink.java:79)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceControl.createWorkspaceNameControl(WorkspaceControl.java:117)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceControl.createControl(WorkspaceControl.java:43)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspacesTabFactory.createTabArea(WorkspacesTabFactory.java:85)
+	at com.genuitec.eclipse.startup.dialogs.tabs.CodeFullyTabFactory.createContents(CodeFullyTabFactory.java:139)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.createTabContent(SideTabFolder.java:455)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.doCreateTabs(SideTabFolder.java:224)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.createTabs(SideTabFolder.java:155)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.createTabs(AbstactSideTabDialog.java:142)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.createTabs(CustomStartupDialog.java:464)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.createTabs(CustomStartupDialog.java:460)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.createContents(AbstactSideTabDialog.java:122)
+	at org.eclipse.jface.window.Window.create(Window.java:431)
+	at org.eclipse.jface.window.Window.open(Window.java:788)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.open(AbstactSideTabDialog.java:61)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.prompt(CustomStartupDialog.java:335)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.showCustomDialog(IDEApplication.java:627)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.promptForWorkspace(IDEApplication.java:383)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.checkInstanceLocation(IDEApplication.java:328)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:175)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:219)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:627)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1431)
+!SESSION 2025-11-19 19:44:32.115 -----------------------------------------------
+eclipse.buildId=4.36.0.20250605-1300
+java.version=21.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2025-11-19 19:44:33.632
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-11-19 19:44:38.740
+!MESSAGE Logback config file: C:\Users\papro\ad\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.100.20250418-1315.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-11-19 19:44:42.811
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\papro'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.codetogether.hq.eclipse 1 0 2025-11-19 19:44:43.621
+!MESSAGE Authorization Server started successfuly
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:45:27.383
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:45:27.393
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:46:37.467
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:46:37.473
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:47:58.229
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:47:58.232
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-11-19 19:48:06.426
+!MESSAGE Unexpected null value present!
+!STACK 0
+java.lang.IllegalStateException: Unexpected null value present!
+	at org.eclipse.lsp4e.internal.NullSafetyHelper.castNonNull(NullSafetyHelper.java:36)
+	at org.eclipse.lsp4e.operations.semanticTokens.SemanticTokensClient.requestFullSemanticTokens(SemanticTokensClient.java:45)
+	at org.eclipse.lsp4e.operations.semanticTokens.SemanticHighlightReconcilerStrategy.fullReconcile(SemanticHighlightReconcilerStrategy.java:239)
+	at org.eclipse.lsp4e.operations.semanticTokens.SemanticHighlightReconcilerStrategy.initialReconcile(SemanticHighlightReconcilerStrategy.java:258)
+	at org.eclipse.ui.internal.genericeditor.CompositeReconcilerStrategy.initialReconcile(CompositeReconcilerStrategy.java:48)
+	at org.eclipse.jface.text.reconciler.Reconciler.initialProcess(Reconciler.java:223)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:177)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:48:50.737
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:48:50.739
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:50:38.367
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:50:38.370
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:52:50.059
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-11-19 19:52:50.061
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
